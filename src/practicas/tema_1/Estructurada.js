@@ -1,10 +1,16 @@
-function max(integers) {
-    let m = Number.MIN_SAFE_INTEGER;
-    for (let i = 0; i < integers.length; i++) {
-      if (m < integers[i]) m = integers[i];
-    }
-    return m;
+function esPrimo(numero) {
+  // Caso especial: Los números menores o iguales a 1 no son primos
+  if (numero <= 1) {
+    return false;
   }
-  const integers = [1,2,3,4,5];
-  console.log(max(integers));
-  
+
+  // Verificamos si el número tiene divisores entre 2 y su raíz cuadrada
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+      return false; // Si encontramos un divisor, no es primo
+    }
+  }
+
+  // Si no encontramos divisores, es un número primo
+  return true;
+}
