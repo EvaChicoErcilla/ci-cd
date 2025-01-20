@@ -8,7 +8,7 @@ Son una manera de clasificar los lenguajes de programación en función de:
 Un mismo lenguaje o código puede ser multiparadigma, en parte gracias a sus librerías
 ### Estructurada
 La programación estructurada es un paradigma que organiza el código en bloques o estructuras controladas (como secuencias, decisiones y bucles), promoviendo claridad, legibilidad y una ejecución lógica lineal sin depender de saltos como el uso excesivo de goto.
-<img src="image-6.png" alt="Captura del ejemplo proporcionado" width="100" height="100">
+<img src="image-6.png" alt="Captura del ejemplo proporcionado" width="100">
 _Ejemplo proporcionado en los apuntes_
 Ejemplo propio
 [Ejecuta el script](Estructurada.js)
