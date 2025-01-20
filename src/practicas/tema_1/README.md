@@ -7,9 +7,12 @@ Son una manera de clasificar los lenguajes de programación en función de:
 •	Estilo de programación
 Un mismo lenguaje o código puede ser multiparadigma, en parte gracias a sus librerías
 ### Estructurada
-Es un tipo de paradigma que incluye el if, else, for y while, es decir, ejecución condicional. Se puede agrupar en funciones como en el ejemplo dado:
-![Captura del ejemplo proporcionado](image.png)
+La programación estructurada es un paradigma que organiza el código en bloques o estructuras controladas (como secuencias, decisiones y bucles), promoviendo claridad, legibilidad y una ejecución lógica lineal sin depender de saltos como el uso excesivo de goto.
+![Captura del ejemplo proporcionado](image-6.png)
 _Ejemplo proporcionado en los apuntes_
+Ejemplo propio
+[Ejecuta el script](/estructurada.py)
+
 ### Imperativa
 Este paradigma se centra en cómo debemos ejecutar. Se enfoca en el uso de instrucciones secuenciales que cambian el estado del programa paso a paso. Existen dos tipos, explicados a continuación.
 #### Procedural
