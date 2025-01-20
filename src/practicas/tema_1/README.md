@@ -12,6 +12,7 @@ La programación estructurada es un paradigma que organiza el código en bloques
 <img src="image-6.png" alt="Captura del ejemplo proporcionado" width="500">
 
 _Ejemplo proporcionado en los apuntes_
+
 Ejemplo propio
 [Ejecuta el script](Estructurada.js)
 
@@ -23,12 +24,20 @@ Es una extensión del paradigma imperativo que organiza el código en procedimie
 <img src="image-2.png" alt="Captura del ejemplo proporcionado" width="500">
 
 _uso de una función como ejemplo de procedural_
+
+Ejemplo propio
+[Ejecuta el script](Imperativa_procedural.js)
+
 #### Orientada a objetos
 En este paradigma, se modelan los problemas como objetos que tienen propiedades (atributos) y comportamientos (métodos).
 
 <img src="image-3.png" alt="Captura del ejemplo proporcionado" width="500">
 
 _uso de una función como ejemplo de orientada a objetos_
+
+Ejemplo propio
+[Ejecuta el script](Imperativa_oo.js)
+
 ### Declarativa
 El paradigma declarativo se centra en qué se quiere lograr. En este enfoque, describes el resultado deseado y dejas que el lenguaje o el entorno se encargue de los detalles de ejecución.
 #### Funcional
@@ -36,7 +45,16 @@ Trata las computaciones como evaluaciones de funciones matemáticas. Evita cambi
 
 <img src="image-4.png" alt="Captura del ejemplo proporcionado" width="500">
 
+
+Ejemplo propio
+[Ejecuta el script](Declarativa_funcional.js)
+
+
 #### Reactiva
 El paradigma reactivo se basa en reaccionar a eventos o cambios en el estado de forma asincrónica y fluida. El paradigma reactivo se usa en sistemas de interfaces modernas y aplicaciones web interactivas, como en React o Angular.
 
 <img src="image-5.png" alt="Captura del ejemplo proporcionado" width="500">
+
+Ejemplo propio
+[Ejecuta el script](Declarativa_reactiva.js)
+
