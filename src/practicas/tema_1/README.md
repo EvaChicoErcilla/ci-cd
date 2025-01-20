@@ -11,7 +11,7 @@ La programación estructurada es un paradigma que organiza el código en bloques
 ![Captura del ejemplo proporcionado](image-6.png)
 _Ejemplo proporcionado en los apuntes_
 Ejemplo propio
-[Ejecuta el script](/Estructurada.js)
+[Ejecuta el script](src/practicas/tema_1/Estructurada.js)
 
 ### Imperativa
 Este paradigma se centra en cómo debemos ejecutar. Se enfoca en el uso de instrucciones secuenciales que cambian el estado del programa paso a paso. Existen dos tipos, explicados a continuación.
