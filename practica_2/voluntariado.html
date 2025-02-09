@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Voluntariado</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Únete al voluntariado y sé parte de La Barana.">
+</head>
+<body>
+
+    <header>
+        <h1>¡Quiero ser voluntari@!</h1>
+    </header>
+
+    <!-- 📌 Imagen centrada -->
+    <div class="imagen-contenedor">
+        <img src="src/circulo.jpg" alt="Imagen representativa" class="imagen-centrada">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#formulario">Formulario</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="estadisticas.html">Estadísticas</a></li>
+        </ul>
+    </nav>
+
+    <main> 
+        <section id="voluntariado">
+            <p class="destacado">
+                Formar parte de algo más grande que, a su vez, es más familiar. ¿Por qué no?
+            </p>
+        </section>
+              
+        <article> 
+            <section id="formulario">
+                <h2 class="titulo-formulario">Formulario para ser voluntario</h2>
+
+                <form action="#" method="post" class="formulario">
+                    
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        
+                        <p>
+                            <label for="fname">Nombre:</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </p>
+
+                        <p>
+                            <label for="lname">Apellidos:</label>
+                            <input type="text" id="lname" name="lname" required>
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+
+                        <p>
+                            <label for="prefijo">Prefijo:</label>
+                            <select id="prefijo" name="prefijo" required>
+                                <option value="" disabled selected>Selecciona</option>
+                                <option value="+1">🇺🇸 +1 (EE.UU.)</option>
+                                <option value="+34">🇪🇸 +34 (España)</option>
+                                <option value="+52">🇲🇽 +52 (México)</option>
+                                <option value="+33">🇫🇷 +33 (Francia)</option>
+                                <option value="+49">🇩🇪 +49 (Alemania)</option>
+                                <option value="+44">🇬🇧 +44 (Reino Unido)</option>
+                            </select> 
+                        </p>
+
+                        <p>
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu número" 
+                                   required pattern="[0-9]{7,15}">
+                        </p>
+
+                        <p>
+                            <label for="ageSelect">Edad:</label>
+                            <select name="edad" id="ageSelect"></select>
+                        </p>
+
+                        <script>
+                            const select = document.getElementById("ageSelect");
+                            for (let age = 18; age <= 67; age++) {
+                                let option = document.createElement("option");
+                                option.textContent = age;
+                                option.value = age;
+                                select.appendChild(option);
+                            }
+                        </script>
+
+                    </fieldset>
+
+                    <!-- Botón de envío llamativo -->
+                    <button type="submit" class="boton-formulario">Enviar</button>
+
+                </form>
+            </section>
+
+            <aside>
+                <h3>¿Dónde estamos?</h3>
+                <figure>
+                    <h3 id="ubicacion">Ven a visitarnos</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58578.51781783556!2d0.47999760500637323!3d42.55006872025138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a879cfbdff4617%3A0x6af7c04e3534d5da!2sCentro%20Ecuestre%20La%20Barana!5e1!3m2!1ses!2ses!4v1738573657761!5m2!1ses!2ses" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </figure>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <a id="contacto" href="https://api.whatsapp.com/send?phone=34659477997" class="whatsapp-boton">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+            Escríbenos por WhatsApp
+        </a>
+    </footer>
+</body>
+</html>
