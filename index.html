@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piedra, papel o tijera</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8"> <!-- codificacion -->
+        <meta name="viewport" content="width=device-width">
+      
+    </head>
+    <body>
+        <h1>Piedra, papel o 99 cosas más</h1>
+
+        <div>
+            <h2>Cómo jugar</h2>
+            <p>
+                Las reglas del juego son muy sencillas, solo tienes que seguir los siguientes pasos:
+                <ol>
+                    <li>selecciona el elemento con el que quieras jugar de la tabla</li>
+                    <li>una vez estés segur@ de tu elección, pídele que genere él su elemento</li>
+                    <li>verás quién gana y por qué</li>
+                </ol>
+            </p>
+
+        </div>
+
+
+
+        <div>
+            <table id = "seleccionObjeto" border = 1>
+            </table>
+        </div>
+
+        <div class = "container">
+            <div class = "competicion">
+                <h2 >El elemento elegido es: </h2>
+                <p id="resultado2">selecciona en la tabla</p>
+                <img id="imagenObjeto2" src="">    
+            </div>
+    
+    
+    
+    
+            <div class = "competicion">
+                <h2>Compites contra: </h2>
+                <button id = "boton" onclick="generarRespuesta()">generar respuesta</button>
+                <p id="resultado">pulsa el botón </p>    
+                <img id="imagenObjeto" src="" >    
+            </div>
+    
+    
+    
+            <div class = "resultado">
+                <h2>El ganador es</h2>
+                <p id = "ganador"></p>
+                <img id="imagenGanador" src="">    
+                <h2>razón</h2>
+                <p id = "razon">Gana porque</p> 
+                <div id="emoji"></div> <!-- Aquí se insertará la imagen del emoji dinámicamente -->
+            </div>
+    
+        </div>
+
+        
+        
+        
+        <script src = "script.js"></script>
+    </body>
+</html>

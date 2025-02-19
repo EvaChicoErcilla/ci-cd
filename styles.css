@@ -1,0 +1,106 @@
+/* Asegura que las celdas no tengan margen ni padding extra */
+td {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    padding: 0;  /* 🔥 Elimina el padding para que el botón use todo el espacio */
+    margin: 0;
+}
+
+/* Hacer que los botones ocupen toda la celda */
+td button {
+    width: 100%;  
+    height: 100%; 
+    padding: 0;   
+    border: none; 
+    background-color: rgb(103, 210, 236); 
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+td button:hover {
+    background-color: rgb(19, 99, 119); ;
+}
+
+h1{
+    color: red;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    font: 200 16px Lato, sans-serif;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    transform: scale(clac(100vw/1920));
+}
+
+body {
+    display: grid;
+    place-items: center; /* Centra horizontal y verticalmente */
+    height: 100vh; /* Hace que ocupe toda la pantalla */
+    padding: 10px;
+    margin: 0; /* Elimina márgenes extra */
+
+  }
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: auto 1fr; /* Dos filas */
+    grid-template-areas: 
+        "izquierda derecha"
+        "resultado resultado";
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ajustar el tamaño */
+    max-width: 800px;
+}
+
+.competicion:nth-child(2) {
+    grid-area: derecha; /* Posiciona en la parte superior derecha */
+}
+
+.competicion:nth-child(1) {
+    grid-area: izquierda; /* Posiciona en la parte superior izquierda */
+}
+
+.resultado {
+    grid-area: resultado; /* Posiciona en la parte inferior ocupando el ancho */
+}
+
+/* Estilos opcionales para que se vea mejor */
+.competicion, .resultado {
+    background: lightgray;
+    text-align: center;
+}
+
+
+  
+
+#boton {
+    background: linear-gradient(45deg, #09f, #09f);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(16, 124, 219, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
